@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>HappyShopping</display-name>
+  <servlet>
+    <servlet-name>Additem</servlet-name>
+    <servlet-class>com.Servlet.Additem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Additem</servlet-name>
+    <url-pattern>/Additionofitem</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Removeproduct</servlet-name>
+    <servlet-class>com.Servlet.Removeproduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Removeproduct</servlet-name>
+    <url-pattern>/Removeitem</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Removeuser</servlet-name>
+    <servlet-class>com.Servlet.Removeuser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Removeuser</servlet-name>
+    <url-pattern>/RemoveUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Registeruser</servlet-name>
+    <servlet-class>com.Servlet.Registeruser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registeruser</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Contact</servlet-name>
+    <servlet-class>com.Servlet.Contact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/Contactus</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>in.techfreaks.shoppingcart.servlet.CartController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+    <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
